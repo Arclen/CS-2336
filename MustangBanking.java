@@ -23,7 +23,7 @@ public class MustangBanking {
 		while(!exit)
 		{
 		System.out.println("Welcome to your Mustang Bank! Please choose from the following options: ");
-		
+		printMenu();
 		int option = in.nextInt();
 		switch(option)
 		case 1:
@@ -56,5 +56,10 @@ public class MustangBanking {
 		}
 		
     }
+	
+	public void printMenu()
+	{
+		System.out.println("1 - Create a new Checking Account\n2 - Create a new Savings Account\n3 - Delete an existing account\n4 - View a specific account\n5 - View all accounts\n6 - Write a check through a specific Checking Account\n7 - Withdraw funds from a specific account\n8 - Deposit funds into an account\n9 - Exit Program\nPlease enter your option below:");
+	}
 
 }
