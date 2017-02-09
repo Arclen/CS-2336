@@ -59,7 +59,16 @@ public class MustangBanking {
 	
 	public void printMenu()
 	{
-		System.out.println("1 - Create a new Checking Account\n2 - Create a new Savings Account\n3 - Delete an existing account\n4 - View a specific account\n5 - View all accounts\n6 - Write a check through a specific Checking Account\n7 - Withdraw funds from a specific account\n8 - Deposit funds into an account\n9 - Exit Program\nPlease enter your option below:");
+		    System.out.println("1 - Create a new Checking Account\n" + 
+                       "2- Create a new Savings Account\n" + 
+                       "3 - Delete an existing account\n" + 
+                       "4 - View a specific account\n" +
+                       "5 - View all accounts\n" + 
+                       "6 - Write a check through a specific Checking Account\n" + 
+                       "7 - Withdraw funds from a specific account\n" + 
+                       "8 - Deposit funds into an account\n" + 
+                       "9 - Exit Program\n" + 
+                       "Please enter your option below:");	
 	}
 
 }
