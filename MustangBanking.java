@@ -5,17 +5,19 @@ import java.util.Scanner;
 public class MustangBanking {
 
     public static void main(String[] args) {
+        MustangBanking mb = new MustangBanking();
         Scanner in = new Scanner(System.in);
 		boolean exit = false;
-		
+
 		while(!exit)
 		{
-		System.out.println("Welcome to your Mustang Bank! Please choose from the following options: ");
-		printMenu();
+		System.out.println("Welcome to your Mustang Bank! Please choose from the following options:\n ");
+                mb.printMenu();
 		int option = in.nextInt();
 		switch(option)
+                {
 		case 1:
-		
+                    //CheckingAccount ca = new CheckingAccount();
 		break;
 		case 2:
 		
@@ -41,22 +43,26 @@ public class MustangBanking {
 		case 9:
 		exit = true;
 		break;
+                }
 		}
 		
     }
-	
-	public void printMenu()
-	{
-		    System.out.println("1 - Create a new Checking Account\n" + 
-                       "2- Create a new Savings Account\n" + 
-                       "3 - Delete an existing account\n" + 
-                       "4 - View a specific account\n" +
-                       "5 - View all accounts\n" + 
-                       "6 - Write a check through a specific Checking Account\n" + 
-                       "7 - Withdraw funds from a specific account\n" + 
-                       "8 - Deposit funds into an account\n" + 
-                       "9 - Exit Program\n" + 
-                       "Please enter your option below:");	
-	}
+    
+    public void printMenu()
+    {
+        System.out.print("1 - Create a new Checking Account\n" + 
+                        "2- Create a new Savings Account\n" + 
+                        "3 - Delete an existing account\n" + 
+                        "4 - View a specific account\n" +
+                        "5 - View all accounts\n" + 
+                        "6 - Write a check through a specific Checking Account\n" + 
+                        "7 - Withdraw funds from a specific account\n" + 
+                        "8 - Deposit funds into an account\n" + 
+                        "9 - Exit Program\n" + 
+                        "Please enter your option below:\n");
+    }
+    
 
+	
+		    	
 }

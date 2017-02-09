@@ -9,9 +9,9 @@ package mustangbanking;
  *
  * @author Jacob Liou
  */
-public class CheckingAccount extends Account{
+public class SavingsAccount extends Account{
     
-    public CheckingAccount(int i, double r, Balance b)
+    public SavingsAccount(int i, double r, Balance b)
     {
         super(i,r,b);
     }

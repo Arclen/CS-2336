@@ -10,5 +10,9 @@ public class Balance {
   public Balance(double b)
   { bal = b; }
     
-    
+  public double getBalance()
+  { return bal; }
+  
+  public void setBalance(double b)
+  { bal = b; }
 }
