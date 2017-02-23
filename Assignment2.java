@@ -26,11 +26,11 @@ public class Assignment2 {
         boolean solved = false;
         boolean loop = false;
         int temp = squares[index];
+        int previous = -1;
         if(start == squares.length-1)
             return true;
         while(!solved)
         {
-            int previous = squares[index];
             if(previous == temp && loop)
                 return false;
             if(previous == temp)
@@ -43,10 +43,12 @@ public class Assignment2 {
             else if(index + temp < squares.length)
             {
                 index += temp;
+                previous = squares[index];
             }
             else if(index - temp >= 0)
             {
                 index -= temp;
+                previous = squares[index];
             }
             else break;
         }
