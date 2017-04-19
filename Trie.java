@@ -20,20 +20,38 @@ public class Trie {
         p.isRoot = true;
         for(int i=0; i<word.length(); i++){
             char c = word.charAt(i);
-;            int index = c-'a';
+            int index = c-'a';
             if(p.arr[index]==null){
                 TrieNode temp = new TrieNode();
                 p.arr[index]=temp;
+                System.out.print(word.charAt(i));
+                p.freq++;
+                p.children[index]=word.charAt(i);
                 p = temp;
             }else{
                 p=p.arr[index];
+                p.arr[index].freq++;
             }
         }
         p.isEnd=true;
     }
-    public boolean lookupWord(String word)
+    public int lookupWord(String word)
     {
-        
+        TrieNode p = root;
+        p.isRoot = true;
+        for(int i=0; i<word.length(); i++){
+            char c = word.charAt(i);
+            int index = c-'a';
+            if(p.arr[index]==null)
+                return 0;
+            else{
+                p=p.arr[index];
+            }
+            if(i == word.length()-1)
+                return p.freq;
+            
+        }
+        return 0;
     }
     
 }

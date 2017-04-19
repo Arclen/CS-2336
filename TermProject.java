@@ -18,6 +18,8 @@ public class TermProject {
         Trie kek = new Trie();
         kek.addWord("test");
         kek.addWord("testament");   
+        kek.addWord("kekalicious");
+        kek.addWord("kekek");
+        System.out.println(kek.lookupWord("kekek"));
     }
-    
 }

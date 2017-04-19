@@ -12,10 +12,14 @@ package termproject;
 public class TrieNode {
     TrieNode[] arr;
     boolean isRoot, isEnd;
+    char[] children;
+    int freq;
     
     public TrieNode()
     {
         this.arr = new TrieNode[26];
+        this.children = new char[26];
+        this.freq = 0;
     }
     
     public boolean isRoot()
